@@ -40,6 +40,12 @@ img {
     flex-wrap: wrap;
 }
 
+.col-3 {
+    width: calc((100%/12)*3);
+}
+.col-9 {
+    width: calc((100%/12)*9);
+}
 /* #region MAIN */
 #site_main {
     padding-bottom: 4rem;
@@ -103,6 +109,39 @@ img {
     padding: 1rem;
 }
 
+.icon_left i {
+    color: white;
+}
 
+.fa-microphone, .fa-video {
+    font-size: 25px;
+}
+
+.fa-chevron-up {
+    font-size: 10px;
+    padding-left: 1rem;
+}
+
+.microphone {
+    float: left;
+    padding-right: 2rem;
+}
+
+.mode {
+    color: white;
+    font-size: 8px;
+    padding-top: 0.25rem;
+}
+
+.icon_center{
+    font-size: 25px;
+    padding-left: 2rem;
+}
+
+.icon {
+    float: left;
+    padding-left: 2rem;
+    text-align: center;
+}
 
 /* #endregion FOOTER */
