@@ -35,18 +35,22 @@ img {
     margin: auto;
 }
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 /* #region MAIN */
 #site_main {
-    position: relative;
-
+    padding-bottom: 4rem;
 }
+
 .gallery {
     padding-top: 3rem;
 }
 
 .user {
     width: calc(100% / 7);
-    float: right;
     padding: 0.25rem 0.1rem;
 }
 
@@ -88,3 +92,17 @@ img {
     right: 0;
 }
 /* #endregion MAIN */
+
+/* #region FOOTER */
+#site_footer { 
+    background-color: var(--zm-footer);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: 3rem;
+    padding: 1rem;
+}
+
+
+
+/* #endregion FOOTER */
