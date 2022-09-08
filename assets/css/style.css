@@ -109,7 +109,7 @@ img {
     padding: 1rem;
 }
 
-.icon_left i {
+.ic_ft i {
     color: white;
 }
 
@@ -142,6 +142,26 @@ img {
     float: left;
     padding-left: 2rem;
     text-align: center;
+}
+
+.share > i {
+    color: var(--zm-share);
+}
+
+.rw_ic {
+    flex-wrap: nowrap;
+}
+
+.end {
+    text-align: end;
+    
+}
+
+.end_meeting {
+    color: var(--zm-end);
+    font-size: 12px;
+    background-color: var(--zm-light-footer);
+    padding: 1rem;
 }
 
 /* #endregion FOOTER */
