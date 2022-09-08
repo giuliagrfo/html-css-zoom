@@ -10,16 +10,11 @@
 body {
     font-family: 'Inter', sans-serif;
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-.user::after {
-    content: "";
-    display: table;
-    clear: both;
 }
 
 body {
@@ -31,8 +26,8 @@ img {
 }
 
 .container {
-    width: 90%;
-    margin: auto;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .row {
@@ -48,11 +43,11 @@ img {
 }
 /* #region MAIN */
 #site_main {
-    padding-bottom: 4rem;
+    height: 80vh;
 }
 
 .gallery {
-    padding-top: 3rem;
+    padding-top: 2rem;
 }
 
 .user {
@@ -76,7 +71,6 @@ img {
     font-size: 10px;
     padding: 0.2rem 0;
 }
-
 
 .speaker_view, .maximize {
     background-color: var(--zm-light-footer) ;
@@ -105,16 +99,31 @@ img {
     position: fixed;
     bottom: 0;
     width: 100%;
+    text-align: center;
     margin-top: 3rem;
-    padding: 1rem;
 }
 
-.ic_ft i {
+.icon::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.icon {
+    font-size: 25px;
+}
+
+.icon i {
     color: white;
 }
 
-.fa-microphone, .fa-video {
-    font-size: 25px;
+.ic {
+    float: left;
+    padding: 0.5rem;
+}
+
+.fa-video, .share {
+    padding-left: 0.5rem;
 }
 
 .fa-chevron-up {
@@ -122,30 +131,18 @@ img {
     padding-left: 1rem;
 }
 
-.microphone {
-    float: left;
-    padding-right: 2rem;
-}
-
 .mode {
     color: white;
     font-size: 8px;
     padding-top: 0.25rem;
+    text-align: initial;
 }
 
-.icon_center{
-    font-size: 25px;
-    padding-left: 2rem;
-}
 
-.icon {
-    float: left;
-    padding-left: 2rem;
-    text-align: center;
-}
 
-.share > i {
+.icon .fa-share-from-square {
     color: var(--zm-share);
+    padding-left: 1rem;
 }
 
 .rw_ic {
@@ -153,15 +150,22 @@ img {
 }
 
 .end {
-    text-align: end;
-    
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .end_meeting {
     color: var(--zm-end);
     font-size: 12px;
     background-color: var(--zm-light-footer);
-    padding: 1rem;
+    padding: 1.5rem 1rem;
+}
+
+
+.center {
+    display: flex;
+    justify-content: center;
 }
 
 /* #endregion FOOTER */
