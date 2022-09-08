@@ -1,3 +1,12 @@
+:root {
+    --zm-user: #69757D;
+    --zm-dark: #000000;
+    --zm-footer: #222222;
+    --zm-light-footer: #4A4A4A;
+    --zm-end: #DC261C;
+    --zm-share: #4BC800;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -14,5 +23,38 @@ img {
 
 .container {
     width: 80%;
-    margin: auto
+    margin: auto;
 }
+
+/* #region MAIN */
+.gallery {
+    padding-top: 3rem;
+}
+
+.user {
+    width: calc(100% / 7);
+    /* float: right; */
+    padding: 0.5rem 0.2rem;
+}
+
+.user > .img {
+    position: relative;
+}
+
+.name {
+    position: absolute;
+    left: 0;
+    bottom: 0.25rem;
+    background-color: #69757d80;
+}
+
+.user_name {
+    color: white;
+    font-size: 12px;
+}
+
+.name i {
+    color: white;
+    font-size: 12px;
+}
+/* #endregion MAIN */
